@@ -1,0 +1,29 @@
+body {
+    background-color: hsl(0, 0%, 16%);
+    font-family: Halant, sans-serif;
+}
+
+.header {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 58px;
+    line-height: 91px;
+    color: hsl(0, 0%, 100%);
+}
+
+::-webkit-scrollbar { /* chrome based */
+    width: 0px;  /* ширина scrollbar'a */
+    background: transparent;  /* опционально */
+}
+@media screen and (max-width: 640px) {
+    .header {
+        width: 100%;
+        background-color: hsl(0, 0%, 16%);
+        position: fixed;
+        top: 0;
+        z-index: 1;
+    }
+    body {
+        margin: 0 !important;
+    }
+}
